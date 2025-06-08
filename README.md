@@ -15,14 +15,14 @@ Dadas dos listas de IDs numéricos:
 
 El objetivo es determinar si alguno de los nuevos IDs ya está presente en la base existente. Para ello, se implementan y comparan dos estrategias:
 
-* Una solución con **bucles anidados** (complejidad **O(n × m)**).
-* Una solución optimizada usando **sets** (complejidad **O(n + m)**).
+* Una solución con **bucles anidados** (complejidad **O(n^2)**).
+* Una solución optimizada usando **diccionarios** (complejidad **O(n)**).
 
 ---
 
 ### 🌐 Tecnologías utilizadas
 
-* **Lenguaje:** Python 3.12
+* **Lenguaje:** Python 3.13
 * **Editor:** Visual Studio Code
 * **Librerías:** `time`, `random`
 
@@ -52,8 +52,8 @@ python validacion_ids.py
 ### 🔢 Resultados esperados
 
 * En el primer caso (listas aleatorias), puede haber coincidencias y ambos algoritmos terminan rápidamente.
-* En el segundo caso (listas sin coincidencias), el algoritmo con bucles anidados tarda considerablemente más, confirmando su complejidad O(n × m).
-* El algoritmo con `set()` es rápido y constante en ambos escenarios.
+* En el segundo caso (listas sin coincidencias), el algoritmo con bucles anidados tarda considerablemente más, confirmando su complejidad O(n^2).
+* El algoritmo con `diccionario` es rápido y constante en ambos escenarios.
 
 ---
 
