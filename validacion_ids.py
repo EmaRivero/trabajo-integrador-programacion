@@ -14,12 +14,10 @@ def id_duplicado_bucles_anidados(ids_registrados, ids_formulario):
 def id_duplicado_dict(ids_registrados, ids_formulario):
     registrados_dict = {}                      
     for id in ids_registrados:                # O(n)
-        registrados_dict[id] = True                # O(1) promedio por inserción
-
+        registrados_dict[id] = True           
     for id in ids_formulario:                 # O(m)
-        if id in registrados_dict:                 # O(1) promedio por búsqueda
+        if id in registrados_dict:                 # O(1) ejecuta la búsqueda
             return True
-
     return False                            
 # Complejidad total: O(n + m). Se reduce a O(n)
 
