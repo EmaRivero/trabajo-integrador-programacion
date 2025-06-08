@@ -17,7 +17,7 @@ def id_duplicado_set(ids_registrados, ids_formulario):
         if id in registrados:           # O(m)    
             return True
     return False
-# Complejidad total O(n+m) -> Convirtiendose en el peor de los casos en O(n*2)
+# Complejidad total O(n+m) -> En este caso se reduce a O(n)
 
 # Función auxiliar para medir el tiempo de ejecución de cada algoritmo
 def medir_tiempo(funcion, lista1, lista2):
