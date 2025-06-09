@@ -5,7 +5,7 @@ import random
 def id_duplicado_bucles_anidados(ids_registrados, ids_formulario):
     for id1 in ids_registrados:             
         for id2 in ids_formulario:             
-            if id1 == id2:              # Se ejecuta n x m veces
+            if id1 == id2:                    # Se ejecuta n x m veces
                 return True
     return False
 # Complejidad total: O(n*m) -> convirtiendose en el peor de los casos a O(n^2)
@@ -16,7 +16,7 @@ def id_duplicado_dict(ids_registrados, ids_formulario):
     for id in ids_registrados:                # O(n)
         registrados_dict[id] = True           
     for id in ids_formulario:                 # O(m)
-        if id in registrados_dict:                 # O(1) ejecuta la búsqueda
+        if id in registrados_dict:            # O(1) ejecuta la búsqueda
             return True
     return False                            
 # Complejidad total: O(n + m). Se reduce a O(n)
@@ -43,8 +43,8 @@ if __name__ == "__main__":
     print(f"[Algoritmo con diccionario] -- Hay duplicados?: {resultado2} -- Tiempo: {tiempo2:.6f} segundos")
 
     # Generación de listas SIN duplicados para simular el peor caso
-    ids_registrados = list(range(100000, 200000 + n))
-    ids_formulario = list(range(300000, 400000 + n))    
+    ids_registrados = list(range(100000, 100000 + n))
+    ids_formulario = list(range(200000, 200000 + n))    
 
     # Ejecución y medición del algoritmo lento (sin duplicados)
     resultado1, tiempo1 = medir_tiempo(id_duplicado_bucles_anidados, ids_registrados, ids_formulario)
