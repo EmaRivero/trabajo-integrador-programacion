@@ -43,8 +43,8 @@ if __name__ == "__main__":
     print(f"[Algoritmo con diccionario] -- Hay duplicados?: {resultado2} -- Tiempo: {tiempo2:.6f} segundos")
 
     # Generación de listas SIN duplicados para simular el peor caso
-    ids_registrados = list(range(100000, 100000 + n))
-    ids_formulario = list(range(200000, 200000 + n))    
+    ids_registrados = [random.randint(100000, 200000) for _ in range(n)]
+    ids_formulario = [random.randint(300000, 400000) for _ in range(n)]     
 
     # Ejecución y medición del algoritmo lento (sin duplicados)
     resultado1, tiempo1 = medir_tiempo(id_duplicado_bucles_anidados, ids_registrados, ids_formulario)
