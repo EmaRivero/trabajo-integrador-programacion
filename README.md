@@ -65,4 +65,4 @@ Este trabajo permitió evidenciar que dos soluciones al mismo problema pueden te
 
 ### 📅 Enlace al video explicativo
 
-*Disponible en el informe PDF entregado.*
+*https://www.youtube.com/watch?v=xH90jmq37H0*
